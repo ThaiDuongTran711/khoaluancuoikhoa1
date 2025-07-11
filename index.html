@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="stylebtck.css" />
+  </head>
+  <body class="tongthe">
+    <!-- Tạo phần logo-->
+    <div class="phantieude">
+      <img
+        src="luudulieu/ChatGPT Image 13_29_02 18 thg 6, 2025.png"
+        alt=""
+        width="256"
+        height="115"
+      />
+
+      <!-- Tạo phần thư mục chọn-->
+      <div class="luachon">
+        <p
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            cursor: pointer;
+          "
+        >
+          <img src="luudulieu/R.png" alt="" width="30" height="30" /> &nbsp;
+          &nbsp;Trang chủ
+        </p>
+        <p
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            cursor: pointer;
+          "
+        >
+          <img src="luudulieu/concert.png" alt="" width="30" height="30" />
+          &nbsp; &nbsp;Chủ đề
+        </p>
+        <p
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            cursor: pointer;
+          "
+        >
+          <img src="luudulieu/library.png" alt="" width="30" height="30" />
+          &nbsp; &nbsp;Thư viện
+        </p>
+        <p
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            cursor: pointer;
+          "
+        >
+          <img
+            src="luudulieu/music-and-multimedia.png"
+            alt=""
+            width="30"
+            height="30"
+          />
+          &nbsp; &nbsp;Khám phá
+        </p>
+        <p
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            cursor: pointer;
+          "
+        >
+          <img src="luudulieu/stage.png" alt="" width="30" height="30" /> &nbsp;
+          &nbsp;Phòng nhạc
+        </p>
+        <hr style="border: 1px solid black; width: 100%" />
+        <p
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            cursor: pointer;
+          "
+        >
+          <img src="luudulieu/R (1).png" alt="" width="30" height="30" /> &nbsp;
+          &nbsp;Bài hát mới
+        </p>
+        <p
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            cursor: pointer;
+          "
+        >
+          <img
+            src="luudulieu/christmas-9089951_640.png"
+            width="30"
+            height="30"
+          />
+          &nbsp; &nbsp;Top 100
+        </p>
+        <button class="naptien">Tài Khoản Vip</button>
+      </div>
+    </div>
+
+    <!-- Tạo phần tìm kiếm, các nút trên thanh taskbar-->
+    <div>
+      <input
+        type="text"
+        placeholder="Tìm kiếm bài hát, ca sĩ, lời bài hát..."
+        id="phantimkiem"
+      />
+      <button id="dangky">Đăng Ký</button>
+      <button id="dangnhap">Đăng nhập</button>
+      <button class="nutbanhrang">
+        <img
+        src="luudulieu/mau-thiet-ke-banh-rang-vector-10.jpg"
+        alt=""
+        class="banhrang"/>
+      </button>
+
+      <button class="nutanhdangnhap">
+        <img
+        src="luudulieu/c6e56503cfdd87da299f72dc416023d4.jpg"
+        alt=""
+        class="anhdangnhap"/>
+      </button>
+      
+    </div>
+
+    <!-- Tạo danh sách bài hát-->
+    <div class="danhsach" id="danhsach"></div>
+    <audio id="nguoidungaudio" controls style="display: none"></audio>
+
+    <!-- Tạo hộp đăng nhập-->
+    <div id="hopdangnhap">
+      <button id="close">X</button>
+      <label for="username">Tên đăng nhập</label>
+      <input type="text" id="tendangnhap" name="username" />
+      <label for="password">Mật khẩu</label>
+      <input type="text" id="matkhau" name="password" /><br />
+      <button  id="nutnhandangnhap">Đăng nhập</button>
+    </div>
+
+    <!-- Tạo hộp đăng ký-->
+    <div id="hopdangky">
+      <button id="closedk">X</button>
+      <label for="username">Tên đăng ký</label>
+      <input type="text" id="tendangky" name="username" />
+      <label for="password"> Nhập Mật khẩu</label>
+      <input type="text" id="nhapmatkhau" name="password" />
+      <label for="password"> Xác Nhận Mật khẩu</label>
+      <input type="text" id="xacnhanmatkhau" name="password" /><br />
+      <button  id="nutnhandangky">Đăng Ký</button>
+    </div>
+
+    <script src="btck.js"></script>
+  </body>
+</html>
